@@ -3,10 +3,9 @@
     <head>
         <title>Java 2 Web</title>
     </head>
-    <body>
+    <body bgcolor="lightblue">
         <header >
-            <img src="UBT-LOGO.png" width="80px">
-            <p style="padding-left: 20px;">Home about contack us</p>
+            <img src="UBT-LOGO.png" width="80px">Home about contact us
         </header>
         <main>
             <ol>
@@ -22,52 +21,104 @@
             <h3><b>Regjistrohu ne faqen tone</b></h3>
             <br />
             <div>
-                <form>
-                    <label for="emri">Emri</label>
-                    <input type="text">
-                    <br />
-                    <label for="mbiemri">Mbiemri</label>
-                    <input type="text">
-                    <br />
-                    <label for="email">Email</label>
-                    <input type="email">
-                    <br />
-                    <label for="mosha">Mosha</label>
-                    <input type="number">
-                    <br />
-                    <label for="data">DataLindjes</label>
-                    <input type="date">
-                    <br />
-                    <label for="male">Mashkull</label>
-                    <input type="radio" name="gender">
-                    <br />
-                    <label for="female">Femer</label>
-                    <input type="radio" name="gender">
-                    <br />
-                    
-                </form>
+                <fieldset>
+                    <legend>Regjistrimi</legend>
+                    <form>
+                        <label for="emri">Emri</label>
+                        <input type="text">pranon tekst cfaredo lloji
+                        <br />
+                        <label for="mbiemri">Mbiemri</label>
+                        <input type="text">pranon tekst cfaredo lloji
+                        <br />
+                        <label for="email">Email</label>
+                        <input type="email">pranon vetem email
+                        <br />
+                        <label for="mosha">Mosha</label>
+                        <input type="number">pranon vetem numer
+                        <br />
+                        <label for="data">DataLindjes</label>
+                        <input type="date">pranon vetem date
+                        <br />
+                        <label for="male">Mashkull</label>
+                        <input type="radio" name="gender">
+                        
+                        <label for="female">Femer</label>
+                        <input type="radio" name="gender">
+                        <br />
+                        <select name="Qytetet" id="">
+                            <option value="">Prishtine</option>
+                            <option value="1">Gjilan</option>
+                            <option value="2">Deçan</option>
+                            <option value="3">Peje</option>
+                        </select>
+                    </form>
+                </fieldset>
+                
             </div>
 
             <div>
-                <table border="1">
-                    <tr><b>
+            <fieldset>
+                <legend>Orari</legend>
+                <table border="1" style="text-align: center;">
+                    <tr>
                         <th></th>
                         <th>9:00 - 10:30</th>
                         <th>10:40 - 12:10</th>
                         <th>12:20 - 13:50</th>
                         <th>14:00 - 15:30</th>
                         <th>15:40 - 17:10</th>
-                        </b>
                     </tr>
                     <tr>
                         <th><b>E Hene</b></th>
+                        <td colspan="2">Inxhinieri e Uebit</td>
+                        <td></td>
+                        <td colspan="2">Labcourse1</td>
+                    </tr>
+                    <tr>
+                        <th>E Marte</th>
+                        <td rowspan="2" colspan="5">Pushim</td>
+                    </tr>
+                    <tr>
+                        <th>E Merkure</th>
+                    </tr>
+                    <tr>
+                        <th>E Enjte</th>
+                        <td>Struktura Diskrete 2</td>
+                        <td>Sisteme Operative</td>
+                        <td>Algoritme</td>
+                        <td colspan="2">Boll per sot</td>
                     </tr>
                 </table>
+                    <fieldset>
+                        <legend>Lendet</legend>
+                        <ul>
+                            <li>Inxhinieri e uebit</li>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <ul >
+                                    <li>Inline</li>
+                                    <li>Internal</li>
+                                    <li>External</li>
+
+                                </ul>
+                                <li>JS</li>
+                                <li>PHP</li>
+                                <ol type="i">
+                                    <li>OOP</li>
+                                    <li>Procedural</li>
+                                </ol>
+                            </ul>
+                        </ul>
+                    </fieldset>
+                
+            </fieldset>
+                
             </div>
             
         </main>
-        <footer>
-
+        <footer style="padding-left: 300px;">   
+                ⓒ2020 - UBT SHKI - <a href="https://github.com/adnankas/Java2.git">Reference</a>
         </footer>
     </body>
 </html>
